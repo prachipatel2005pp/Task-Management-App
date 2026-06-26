@@ -79,11 +79,6 @@ If you login as admin, the app redirects to `/admin-dashboard`.
 - Frontend communicates with backend using Axios
 - CORS is enabled in the backend so the frontend can make API requests from a different origin
 
-## Important notes
-
-- Make sure the backend is running before trying to login from the frontend. A common error is **Network Error** when the frontend cannot connect to `http://127.0.0.1:8000`.
-- If you change the backend port, also update `frontend/src/services/api.js` `baseURL`.
-- The backend uses MongoDB at `mongodb://localhost:27017`, so MongoDB must be running locally.
 
 ## Useful commands
 
@@ -98,6 +93,3 @@ npm install
 npm run dev
 ```
 
-## Summary
-
-This project is a beginner-friendly task manager with both frontend and backend components. It demonstrates how to build a React UI, connect it to a FastAPI backend, and persist data with MongoDB. Use the admin credentials above to access the admin dashboard, and register regular users for normal task management use.
